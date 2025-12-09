@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'League Gothic', sans-serif;
+  background-color: #fcc930;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.baseball img {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  transform-origin: center;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 10rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeIn 2s ease-out;
+}
+
+.intro {
+  font-size: 2.5rem;
+  max-width: 600px;
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+
+/* animated baseball shit */
+.baseball {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+
+
+}
+
+.baseball img {
+  animation: spin 5s linear infinite;
+  transform-origin: center;
+
+}
+
+.baseball:hover {
+  transform: scale(1.2) rotate(20deg);
+}
+
+
+.story {
+  padding: 4rem 2rem;
+  background: hsl(47, 99%, 55%);
+  font-size: 2rem;
+}
+
+
+footer {
+  padding: 1.5rem;
+  background: #fccc20;
+  font-size: 2rem;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .baseball {
+    width: 90px;
+    height: 90px;
+  }
+
+
+  .baseball img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .story {
+    font-size: 0.9rem;
+  }
+
+}
+
+#hp1 {
+    font-family: "League Gothic", sans-serif;
+    display: block;
+    margin-top: 425px;
+    font-size: 20px;
+   margin-right: 250 px;
+    color: rgb(6, 6, 6);
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baseball Poster Generator</title>
+
+    
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <h4>Baseball Poster Generator:</h4>
+
+    <main>
+        <div id="settings">
+
+            <label for="bg-color">background color</label>
+            <input id="bg-color" class="colorbean" type="color" value="#001f3f"><br>
+
+            <label for="fg-color">headline color</label>
+            <input id="fg-color" type="color" value="#ffffff"><br>
+
+            <label for="font">headline font</label>
+            <select id="font">
+                <option value="Bebas Neue">Select a font</option>
+                <option value="neue">Bebas Neue</option>
+                <option value="Space Mono">Space Mono</option>
+                <option value="Noto Sans JP">Noto</option>
+            </select><br>
+
+            <label for="image">select a player</label>
+            <select id="image">
+                <option value="">Select a player</option>
+                <option value="./assets/judge.png">Aaron Judge</option>
+                <option value="./assets/ohtani.png">Shohei Ohtani</option>
+                <option value="./assets/skenes.png">Paul Skenes</option>
+            </select><br>
+
+            <label for="text">poster headline</label>
+            <input id="text" type="text" value="Aaron Judge // Power at the Plate" /><br>
+
+            <label for="font-size">font-size</label>
+            <input id="font-size" min="16" max="72" step="1" type="range" value="32"><br>
+
+            <label for="font-stretch">stretch (x-axis)</label>
+            <input id="font-stretch" min="0.25" max="4" step="0.1" type="range" value="1"><br>
+
+           
+            <button id="print">print poster</button>
+
+        </div>
+
+        
+        <div id="poster">
+            <h1 id="poster-text">Select a player</h1>
+            <img id="poster-image" src="./assets/judge.png" alt="Aaron Judge poster image" />
+        </div>
+        <a id="hp1" href="../index.html">The Diamond</a>
+
+    </main>
+
+  
+    <script src="./main.js"></script>
+</body>
+
+</html>

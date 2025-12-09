@@ -1,0 +1,129 @@
+body {
+    font-size: 16px;
+    font-family: "League Gothic", sans-serif;
+    background-color: #76797e;
+    color: #f5f5f5;
+}
+
+main {
+    display: flex;
+}
+
+#settings {
+    margin: 25px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+#poster {
+    border: 1px dotted #ffffff;
+    display: inline-block;
+    padding: 25px;
+    text-align: center;
+    background-color: #111135;
+    min-width: 300px;
+}
+
+#poster-text {
+    font-size: 32px;
+    font-family:  "Space Mono", monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+}
+
+#poster-image {
+    width: 300px;
+    max-width: 80vw;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.6));
+}
+
+
+button,
+select {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: "League Gothic", sans-serif;
+    border-radius: 0;
+    padding: 3px 8px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.colorbean {
+    border-radius: 50%;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+
+#hp1 {
+    font-family: "League Gothic", sans-serif;
+    margin-bottom: 500px;
+    font-size: 20px;
+    color: rgb(6, 6, 6);
+}
+
+/* print settingg*/
+@media print {
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    #poster {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        border: none;
+        padding: 0;
+        background-color: white !important;
+    }
+
+    /* contolrs */
+    #settings,
+    #print,
+    h4 {
+        display: none !important;
+    }
+}
+
+/* mmobile style */
+@media (max-width: 760px) {
+    main {
+        flex-direction: column;
+    }
+
+    #settings {
+        margin: 15px;
+    }
+
+    #poster {
+        padding: 15px;
+        margin: 0 15px 30px 15px;
+    }
+
+    #poster-text {
+        font-size: 24px;
+    }
+
+    #poster-image {
+        width: 220px;
+    }
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Baseball Path</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Baseball Path</h1>
+
+  <div id="step1" class="step active">
+    <h2>Step 1</h2>
+    <input id="nameInput" placeholder="Name (optional)">
+    <button data-role="hitter">Hitter</button>
+    <button data-role="pitcher">Pitcher</button>
+    <button data-role="two-way">Two-Way</button>
+    <p id="preview1"></p>
+  </div>
+
+  <div id="step2" class="step">
+    <h2>Step 2</h2>
+    <button data-train="power">Power</button>
+    <button data-train="contact">Contact</button>
+    <button data-train="discipline">Discipline</button>
+    <p id="preview2"></p>
+  </div>
+
+  <div id="step3" class="step">
+    <h2>Step 3</h2>
+    <button data-sit="Tie Game">Tie Game</button>
+    <button data-sit="Bases Loaded">Bases Loaded</button>
+    <button data-sit="Win or Go Home">Win or Go Home</button>
+  </div>
+
+  <div id="result" class="step">
+    <h2>Your Moment</h2>
+    <p id="resultText"></p>
+    <img id="resultImg">
+    <button id="restartBtn">Restart</button>
+  </div>
+<a id="hp1" href="../index.html">The Diamond</a>
+  <script src="main.js"></script>
+</body>
+</html>
