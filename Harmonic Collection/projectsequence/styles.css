@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+    background-color: #2ECC71;
+  color: antiquewhite;
+  padding: 20px;
+}
+
+h1 { margin-bottom: 10px; }
+
+.step {
+  display: none;
+  padding: 15px;
+  background: rgba(205, 11, 239, 0.1);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.step.active { display: block; }
+
+button {
+  border: none;
+  padding: 8px 12px;
+  margin: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover { opacity: 0.8; }
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.power { border: 2px solid #ff6b81; }
+.contact { border: 2px solid #5f9dff; }
+.discipline { border: 2px solid #ffd75b; }

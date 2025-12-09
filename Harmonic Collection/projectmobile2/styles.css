@@ -113,6 +113,7 @@ img {
   }
 
   #hp1 {
+    display: block;
     font-family: "League Gothic", sans-serif;
     display: block;
     font-size: 50px;
