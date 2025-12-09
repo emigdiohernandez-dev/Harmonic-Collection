@@ -120,3 +120,12 @@ footer {
   }
 
 }
+
+#hp1 {
+    font-family: "League Gothic", sans-serif;
+    display: block;
+    margin-top: 425px;
+    font-size: 20px;
+   margin-right: 250 px;
+    color: rgb(6, 6, 6);
+}

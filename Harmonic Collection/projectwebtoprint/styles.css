@@ -71,6 +71,14 @@ button:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
+
+#hp1 {
+    font-family: "League Gothic", sans-serif;
+    margin-bottom: 500px;
+    font-size: 20px;
+    color: rgb(6, 6, 6);
+}
+
 /* print settingg*/
 @media print {
 
@@ -118,3 +126,4 @@ button:hover {
         width: 220px;
     }
 }
+
